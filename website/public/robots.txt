@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://schoenenberg.github.io/zola-paper/sitemap.xml
