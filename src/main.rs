@@ -1,3 +1,5 @@
+mod help;
+
 fn main() {
-    println!("Hello, world!");
+    help::help();
 }
