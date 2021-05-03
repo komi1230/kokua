@@ -11,6 +11,7 @@ description = "Yet Another Embulk written in Rust"
 
 [dependencies]
 clap = "2.33.3"
+kokua-commands = { path = "src/kokua-commands", version = "0.1.0"}
 
 [workspace]
 members = [
