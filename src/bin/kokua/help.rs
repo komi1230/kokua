@@ -30,3 +30,11 @@ SUBCOMMAND:
         help_subcommand = help_subcommand,
     );
 }
+
+#[cfg(test)]
+mod tests {
+    #[test]
+    fn hoge() {
+        assert!(true);
+    }
+}

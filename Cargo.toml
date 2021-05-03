@@ -1,12 +1,23 @@
 [package]
-name = "launcher"
+name = "kokua"
 version = "0.1.0"
 authors = ["komi1230 <yukke.konan@gmail.com>"]
 edition = "2018"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+license = "MIT"
+homepage = "https://komi1230.github.io/launcher"
+repository = "https://github.com/komi1230/kokua"
+readme = "README.md"
+description = "Yet Another Embulk written in Rust"
 
 [dependencies]
-serde = { version = "1.0", features = ["derive"] }
-serde_yaml = "0.8"
-colored = "2"
+clap = "2.33.3"
+
+[workspace]
+members = [
+    "src/kokua-api",
+    "src/kokua-core",
+    "src/kokua-commands",
+]
+
+[[bin]]
+name = "kokua"
