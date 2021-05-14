@@ -1,4 +1,4 @@
-# launcher
+# kokua
 
 Yet Another Embulk written in Rust.
 
