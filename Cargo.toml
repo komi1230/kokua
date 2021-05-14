@@ -16,9 +16,7 @@ kokua-commands = { path = "src/kokua-commands", version = "0.1.0"}
 [workspace]
 members = [
     "src/kokua-api",
-    "src/kokua-core",
     "src/kokua-commands",
-    "src/kokua-utils"
 ]
 
 [[bin]]
