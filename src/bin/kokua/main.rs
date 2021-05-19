@@ -26,6 +26,7 @@ pub fn cli<'a>() -> App<'a> {
     let subcmd_run = App::new("run")
         .setting(AppSettings::ColoredHelp)
         .setting(AppSettings::VersionlessSubcommands)
+        .setting(AppSettings::ArgRequiredElseHelp)
         .about("Run a bulk load transaction")
         .help_template("{about-with-newline}\n{usage-heading}\n    {usage}\n\n{all-args}")
         .arg(
@@ -38,6 +39,7 @@ pub fn cli<'a>() -> App<'a> {
     let subcmd_install = App::new("install")
         .setting(AppSettings::ColoredHelp)
         .setting(AppSettings::VersionlessSubcommands)
+        .setting(AppSettings::ArgRequiredElseHelp)
         .about("Install a new plugin")
         .help_template("{about-with-newline}\n{usage-heading}\n    {usage}\n\n{all-args}")
         .arg(
@@ -50,6 +52,7 @@ pub fn cli<'a>() -> App<'a> {
     let subcmd_uninstall = App::new("uninstall")
         .setting(AppSettings::ColoredHelp)
         .setting(AppSettings::VersionlessSubcommands)
+        .setting(AppSettings::ArgRequiredElseHelp)
         .about("Uninstall an existing plugin")
         .help_template("{about-with-newline}\n{usage-heading}\n    {usage}\n\n{all-args}")
         .arg(
