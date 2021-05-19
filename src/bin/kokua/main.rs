@@ -4,8 +4,10 @@ extern crate clap;
 use clap::{App, AppSettings, Arg};
 
 mod commands;
+mod initialize;
 
 fn main() {
+    initialize::exec();
     match cli().get_matches().subcommand() {
         Some(("run", subcmd_matches)) => {
             commands::run::exec(subcmd_matches);
